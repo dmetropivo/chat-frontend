@@ -1,0 +1,15 @@
+.formWrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3%;
+  .nicknameInput {
+    width: 30%;
+  }
+  .messageInput {
+    width: 60%;
+  }
+  button {
+    padding: 12px 10px;
+    height: 48px;
+  }
+}

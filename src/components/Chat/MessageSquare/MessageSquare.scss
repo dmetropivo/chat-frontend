@@ -1,0 +1,21 @@
+.messageSquare {
+  min-width: 70px;
+  max-width: 100%;
+  width: fit-content;
+  //min-height: 100px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  border: 1px solid #afafaf;
+  p {
+    line-break: anywhere;
+    word-wrap: break-word;
+  }
+  p:nth-child(1) {
+    font-weight: 700;
+  }
+  p:nth-child(2) {
+  }
+}

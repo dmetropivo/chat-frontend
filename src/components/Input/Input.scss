@@ -1,0 +1,63 @@
+.containerInput {
+  width: 100%;
+
+  input {
+    height: 20px;
+    width: 100%;
+    padding: 12px 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    //border-radius: 6px;
+    background-color: var(--color-background-input-primary);
+    &::placeholder {
+      font-weight: 300;
+      color: #000000B2;
+      opacity: 0.5;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &.primary {
+    input {
+      border: 0.5px solid var(--color-border-input-primary);
+      &:focus-visible, :focus {
+        outline: 0.5px solid var(--color-border-input-primary);
+      }
+    }
+  }
+
+  .helperText {
+    font-weight: 300;
+    margin-top: 4px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-helper-text);
+    font-size: var(--text-font-size-helper-text);
+    height: var(--text-line-height-helper-text);
+    line-height: var(--text-line-height-helper-text);
+    p {
+      word-break: break-all;
+    }
+    span {
+      margin-left: 10px;
+      min-width: 40px;
+      text-align: end;
+    }
+  }
+
+  &.error {
+    input {
+      border: 1px solid var(--color-error) !important;
+      &:focus-visible, :focus {
+        border: 1px solid var(--color-error) !important;
+      }
+    }
+    .helperText {
+      color: var(--color-error);
+    }
+  }
+}
